@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Jokes</title>
+</head>
+
+<body>
+
+  <form id="getJoke" class="form__joke">
+
+    <label>
+      Random <input type="radio" value="random" name="joke__type" checked>
+    </label>
+
+    <label>
+      From categories <input type="radio" value="categories" name="joke__type">
+      <div class="categories"></div>
+    </label>
+
+    <label>
+      Search <input type="radio" value="search" name="joke__type">
+      <label>
+        <input type="text" id="searchInput">
+      </label>
+    </label>
+
+    <button>Get Joke</button>
+
+  </form>
+
+  <div class="jokes__container">
+    <div class="jokes__wrapper"></div>
+    <div class="jokes__favourite"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
